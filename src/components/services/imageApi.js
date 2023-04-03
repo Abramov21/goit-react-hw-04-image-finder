@@ -43,9 +43,9 @@ const ImageApi = axios.create({
   },
 });
 
-export const fetchImages = async (searchQuery, page) => {
+export const fetchImages = async (query, page) => {
   const params = {
-    q: searchQuery,
+    q: query,
     page,
   };
   try {
